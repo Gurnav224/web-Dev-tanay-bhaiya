@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>random background color </title>
+
+    <style>
+       body {
+              width: 500px;
+              height: 700px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+    <button id="changeColor">change</button>
+
+
+</div>
+
+
+    <script>
+       /*
+
+       var randomColor = Math.floor(Math.random()*16777215).toString(16);
+
+    function backgroundColor(){
+
+        let randomColor1 = Math.floor(Math.random()*256)
+        let randomColor2 = Math.floor(Math.random()*256)
+        let randomColor3 = Math.floor(Math.random()*256)
+
+        let rgb = `rgb(${randomColor1},${randomColor2},${randomColor3})`;
+
+        document.body.style.background = rgb;
+    }
+
+    const btn = document.querySelector('#changeColor');
+
+    btn.addEventListener('click',backgroundColor)
+
+    */
+
+    function randomColor(){
+        var random = Math.floor(Math.random()*16777215).toString(16);
+
+       console.log(random)
+        document.body.style.background = "#"+random;
+    }
+
+
+    const btn = document.querySelector('#changeColor');
+
+   btn.addEventListener('click',randomColor)
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <div>
+        <input id="inputOne" type="text">
+    </div>
+    <div>
+        <input id="inputTwo" type="text">
+    </div>
+
+    <button onclick="add()">+</button>
+    <button onclick="sub()">-</button>
+    <button onclick="mutliply()">x</button>
+    <button onclick="divide()">/</button>
+
+    <p id="output"></p>
+
+    <script>
+        
+        
+        function add() {
+            var numOne = Number(  document.getElementById('inputOne').value);
+            var numTwo = Number(  document.getElementById('inputTwo').value);
+            let sum  = numOne+numTwo
+           document.getElementById('output').innerHTML = sum;            
+            console.log(sum);
+            return sum;
+        }
+        function sub() {
+            var numOne = Number(  document.getElementById('inputOne').value);
+            var numTwo = Number(  document.getElementById('inputTwo').value);
+            let sub  = numOne-numTwo
+            document.getElementById('output').innerHTML = sub;
+            console.log(sub);
+            return sub;
+        }
+        function  mutliply() {
+            var numOne = Number(  document.getElementById('inputOne').value);
+            var numTwo = Number(  document.getElementById('inputTwo').value);
+            let mutliply = numOne*numTwo
+
+            document.getElementById('output').innerHTML = mutliply;
+            
+            console.log(mutliply);
+            return mutliply;
+        }
+        function divide() {
+            var numOne = Number(  document.getElementById('inputOne').value);
+            var numTwo = Number(  document.getElementById('inputTwo').value);
+            let divide  = numOne/numTwo
+            document.getElementById('output').innerHTML = divide;
+            console.log(divide);
+            return divide;
+        }
+
+
+
+        </script>
+</body>
+</html>
